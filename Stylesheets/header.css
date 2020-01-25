@@ -1,0 +1,53 @@
+@import 'scheme.css';
+
+header {
+    display: block;
+    width: 100vw;
+    height: 116px;
+    background: var(--background-color);
+}
+.Header_Content {
+    display: grid;
+    grid-template-areas: "logo nav user";
+    width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+.Header_Content .logo {
+    grid-area: "logo";
+}
+.navigation {
+    display: block;
+    grid-area: "nav";
+}
+.navigation_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 372px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navigation_links a {
+    font-family: 'Mons';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    /* text gray */
+    color: #5C6A79;
+    text-decoration: none;
+}
+.profile_selections div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 120.84px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}

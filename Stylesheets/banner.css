@@ -1,0 +1,65 @@
+@import 'scheme.css';
+
+.Banner {
+    display: block;
+    position: relative;
+    width: 75vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+}
+.Banner object {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.banner_link_block {
+    cursor: pointer;
+    transition: 0.2s all linear;
+}
+.banner_link_block:hover {
+    transform: translateY(-25px);
+}
+.Banner .banner_link_block[type='long'] {
+    display: block;
+    width: 137px;
+    height: 273px;
+    background-color: var(--light-pink);
+    position: absolute;
+    top: 400px;
+    right: -125px;
+}
+.Banner .banner_link_block[type='short'] {
+    display: block;
+    width: 149px;
+    height: 204px;
+    background-color: var(--dark-purple);
+    position: absolute;
+    top: 150px;
+    right: 0px;
+}
+.banner_link_block[type='short'] .banner_block_content {
+    top: 8%;
+}
+.banner_block_content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    top: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.2s all ease;
+}
+.banner_block_content h3 {
+    font-family: 'Mons';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    /* text black */
+    color: #1C2A39;
+}

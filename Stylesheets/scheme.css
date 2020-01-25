@@ -1,0 +1,69 @@
+:root {
+    --background-color: #FFFFF;
+    --bold-text-color: #1C2A39;
+    --regular-text-color: #5C6A79;
+    --stroke-color: #4C3DB2;
+
+    /* Other colors */
+
+    --dark-purple: #9E98DC;
+    --light-pink: #FF8FE6;
+    --light-purple: #EFEEF6;
+
+}
+
+/* Font Imports */
+
+@font-face {
+    font-family: 'Mons';
+    src: url('../Fonts/Montserrat/Montserrat-Black.ttf');
+    font-weight: bolder;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mons';
+    src: url('../Fonts/Montserrat/Montserrat-BlackItalic.ttf');
+    font-weight: bolder;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Mons';
+    src: url('../Fonts/Montserrat/Montserrat-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mons';
+    src: url('../Fonts/Montserrat/Montserrat-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Mons';
+    src: url('../Fonts/Montserrat/Montserrat-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mons';
+    src: url('../Fonts/Montserrat/Montserrat-SemiBold.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../Fonts/Open_Sans/OpenSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+.logo h1 {
+    font-family: 'Mons';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    /* text black */
+    color: #1C2A39;
+}
+
+

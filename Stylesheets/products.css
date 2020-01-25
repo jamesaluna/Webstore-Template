@@ -1,0 +1,199 @@
+@import 'scheme.css';
+
+.Products {
+    display: block;
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+.products_categories {
+    display: block;
+    width: 416px;
+    height: max-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--light-purple);
+    z-index: 1;
+}
+.products_categories div {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: auto;
+    float: right;
+    transform: translateX(-100px);
+}
+.products_categories div span {
+    display: block;
+    padding: 15px;
+    font-family: 'Mons';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-transform: capitalize;
+    /* text gray */
+    color: #5C6A79;
+    cursor: pointer;
+}
+.productListWrapper {
+    display: block;
+    width: 75%;
+    height: auto;
+    position: absolute;
+    z-index: 5;
+}
+.product_list {
+    display: block;
+}
+.productListWrapper {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 924px;
+    height: max-content;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product_listing {
+    display: flex;
+    flex-direction: row;
+    width: 424px;
+    height: 300px;
+}
+.product_listing .product_image {
+    display: block;
+    width: 50%;
+    height: 100%;
+}
+.product_image img {
+    width: 100%;
+    height: 100%;
+}
+.productDescriptionWrapper {
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.productDescriptionWrapper .product_description {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.product_description {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 176px;
+    height: 204px;
+}
+.product_description .product_author {
+    display: block;
+    width: 100%;
+}
+.authorText {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height */
+    text-transform: capitalize;
+    /* text gray */
+    color: #5C6A79;
+}
+.productTitle {
+    font-family: 'Mons';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    /* text black */
+    color: #1C2A39;
+}
+.productDescription {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: capitalize;
+    /* text gray */
+    color: #5C6A79;
+}
+.product_author, .product_title, .product_review, .product_desc, .product_price {
+    display: block;
+    width: 100%;
+    height: max-content;
+    padding: 8px;
+}
+.product_price {
+    display: flex;
+    flex-direction: row;
+    width:max-content;
+}
+.product_price span {
+    display: block;
+    width: max-content;
+    height: auto;
+    padding-right: 25px;
+}
+.product_price span[type='final'] {
+    font-family: 'Mons';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    text-transform: uppercase;
+    /* text black */
+    color: #1C2A39;
+}
+.product_price span[type='prev'] {
+    font-family: 'Mons';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    /* #BDBDBD */
+    color: #BDBDBD;
+}
+.product_description button {
+    display: block;
+    width: 100%;
+    height: 45px;
+    border: 1px solid var(--stroke-color);
+    position: relative;    
+    background: transparent;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.product_description button span {
+    display: block;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    font-family: 'Mons';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: var(--stroke-color);
+}
