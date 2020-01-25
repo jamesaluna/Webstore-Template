@@ -28,6 +28,7 @@
 }
 .products_categories div span {
     display: block;
+    position: relative;
     padding: 15px;
     font-family: 'Mons';
     font-style: normal;
@@ -38,7 +39,30 @@
     text-transform: capitalize;
     /* text gray */
     color: #5C6A79;
+    transition: 0.2s all linear;
     cursor: pointer;
+    
+    --icon-opacity: 0;
+}
+.products_categories div span::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #756AD3;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: var(--icon-opacity);
+    transition: 0.2s all linear;
+}
+.products_categories div span:hover {
+    transform: translateX(10px);
+    --icon-opacity: 1;
+    font-weight: bold;
+    font-size: 16px;
 }
 .productListWrapper {
     display: block;
