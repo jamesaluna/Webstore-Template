@@ -10,7 +10,7 @@ $product_category = $_POST['product_category'];
 $product_description = $_POST['product_description'];
 $product_image = $_POST['product_image'];
 
-$sql = "INSERT INTO `Products`(`product_name`, `product_type`, `product_price`, `product_category`, `product_description`, `product_image`, `author_name`) VALUES ('$product_name','$product_type','$product_price','$product_category','$product_description','$product_image','$product_author');";
+$sql = "INSERT INTO Products(`product_name`, `product_type`, `product_price`, `product_category`, `product_description`, `product_image`, `author_name`) VALUES ('$product_name','$product_type','$product_price','$product_category','$product_description','$product_image','$product_author');";
 
 $conn = OpenCon();
 echo 'connection successful';
