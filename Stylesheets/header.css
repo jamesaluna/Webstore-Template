@@ -41,6 +41,11 @@ header {
     /* text gray */
     color: #5C6A79;
     text-decoration: none;
+    transition: 0.1s all linear
+}
+.navigation_links a:hover {
+    font-weight: bolder;
+    color: #1C2A39;
 }
 .profile_selections div {
     display: flex;

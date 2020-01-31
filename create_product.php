@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bookstore</title>
     <link rel='Stylesheet' href='Stylesheets/index.css' />
+    <link rel='Stylesheet' href='Stylesheets/create_product.css' />
     <script src='Scripts/script.js'></script>
 </head>
 <body>
@@ -13,10 +14,10 @@
 include 'header.php';
 ?>
 <?php
-include 'banner.php';
-?>
-<?php
-include 'products.php';
+include 'create_product_form.php'
 ?>
 </body>
+<script>
+    
+</script>
 </html>

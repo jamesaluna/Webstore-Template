@@ -1,0 +1,150 @@
+.create_product {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: auto;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.create_product h2 {
+    display: block;
+    width: 100%;
+    padding-bottom: 75px;
+    font-family: 'Mons';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+}
+.create_product_form_component {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 625px;
+    height: auto;
+}
+.create_product_form_image_wrap {
+    display: block;
+    width: 35%;
+    height: auto;
+    position: relative;
+}
+.create_product_form_info_wrap {
+    display: block;
+    width: max-content;
+    height: auto;
+    position: relative;
+}
+.create_product_form_image {
+    display: block;
+    width: 175px;
+    height: 282px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) scale(1.1);
+    background: #F6F3F3;
+}
+.create_product_form_image input[type='file'] {
+    display: block;
+    width: 175px;
+    height: 282px;
+    z-index: 1000;
+    opacity: 0;
+    cursor: pointer;
+  }
+.create_product_form_image::after {
+    content: url('../Vectors/upload.svg');
+    position: relative;
+    top: -160px;
+    left: 69px;
+    cursor: pointer;
+    z-index: -1;
+}
+.create_product_form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 350px;
+    height: auto;
+}
+.create_product_form label {
+    display: block;
+    width: max-content;
+    height: max-content;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height */
+    text-transform: capitalize;
+    /* text gray */
+    color: #5C6A79;
+}
+.create_product_form div {
+    display: block;
+    width: max-content;
+    height: max-content;
+    padding: 15px 10px 15px 10px;
+}
+.create_product_form div input {
+    display: block;
+    width: 100px;
+    height: 35px;
+    background: #F6F3F3;
+    border: none;
+    padding: 0px 25px 0px 25px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    /* identical to box height */
+    text-transform: capitalize;
+    color: #1C2A39;
+}
+.create_product_form div input[size='large'] {
+    width: 280px;
+}
+.create_product_form div textarea {
+    display: block;
+    width: 330px;
+    min-height: 100px;
+    background: #F6F3F3;
+    border: none;
+}
+.create_product button {
+    display: block;
+    width: 176px;
+    height: 45px;
+    border: 1px solid #4C3DB2;
+    background: transparent;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    cursor: pointer;
+}
+.create_product button span {
+    display: block;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+    font-family: 'Mons';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: #4C3DB2;
+}
